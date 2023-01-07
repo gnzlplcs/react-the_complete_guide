@@ -12,3 +12,10 @@
 
 + react uses a declarative approach: define the desired target state and let React figure out the actual JS DOM instructions.
 + build your own custom HTML elements.
+
+## build a component tree
+
+```js
+<App /> | <Header /> <Tasks /> // render into a single HTML file
+<Tasks /> | <Task /> <Task /> <Task />
+```
