@@ -4,8 +4,12 @@ import Card from "../UI/Card";
 import "./ExpenseItem.css";
 
 const ExpenseItem = ({ title, date, amount }) => {
+
+  let changedTitle = 'Updated!'
   const handleClick = () => {
-    console.log("Clicked!");
+    // concept of state
+    changedTitle = 'new' // this does not work
+    console.log(changedTitle); // this works
   };
   return (
     <Card className="expense-item">
